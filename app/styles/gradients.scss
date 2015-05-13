@@ -1,0 +1,127 @@
+.gray { 
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(top left, #DBDDDE -10%, #898C90 80%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top left, #DBDDDE -10%, #898C90 80%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top left, #DBDDDE -10%, #898C90 80%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(-0.1, #DBDDDE), color-stop(0.8, #898C90));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top left, #DBDDDE -10%, #898C90 80%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom right, #DBDDDE -10%, #898C90 80%);
+}
+
+.orange {
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(top left, #F09819 0%, #FF512F 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top left, #F09819 0%, #FF512F 100%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top left, #F09819 0%, #FF512F 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #F09819), color-stop(1, #FF512F));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top left, #F09819 0%, #FF512F 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom right, #F09819 0%, #FF512F 100%);
+}
+
+.violet {
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(top left, #E6DADA 20%, #4A2E61 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top left, #E6DADA 20%, #4A2E61 100%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top left, #E6DADA 20%, #4A2E61 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.2, #E6DADA), color-stop(1, #4A2E61));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top left, #E6DADA 20%, #4A2E61 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom right, #E6DADA 20%, #4A2E61 100%);
+}
+
+.red {
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(top left, #FF5B37 0%, #FB2B69 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top left, #FF5B37 0%, #FB2B69 100%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top left, #FF5B37 0%, #FB2B69 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FF5B37), color-stop(1, #FB2B69));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top left, #FF5B37 0%, #FB2B69 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom right, #FF5B37 0%, #FB2B69 100%);   
+}
+
+.yellow {
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(top left, #FBFF87 0%, #F0C518 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top left, #FBFF87 0%, #F0C518 100%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top left, #FBFF87 0%, #F0C518 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FBFF87), color-stop(1, #F0C518));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top left, #FBFF87 0%, #F0C518 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom right, #FBFF87 0%, #F0C518 100%);
+}
+
+.green {
+  background: -webkit-linear-gradient(90deg, #ADD100 10%, #7B920A 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #ADD100 10%, #7B920A 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #ADD100 10%, #7B920A 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #ADD100 10%, #7B920A 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #ADD100 10%, #7B920A 90%); /* W3C */ 
+}
+
+.blue {
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(top left, #26D0CE 0%, #1D3B80 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top left, #26D0CE 0%, #1D3B80 100%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top left, #26D0CE 0%, #1D3B80 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #26D0CE), color-stop(1, #1D3B80));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top left, #26D0CE 0%, #1D3B80 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom right, #26D0CE 0%, #1D3B80 100%);
+}

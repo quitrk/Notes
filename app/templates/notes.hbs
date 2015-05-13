@@ -1,0 +1,14 @@
+<div class="sidebar pull-right">
+  {{calendar-widget selectedDate=selectedDate highlightedDates=highlightedDates}}
+  <button class="btn btn-primary" {{action "showModal" "edit"}}>Add note</button> 
+</div>
+
+<div id="notes-container">
+  <ul>
+    {{#each note in model}}
+      <li>
+        {{view 'note'}}
+      </li>
+    {{/each}}
+  </ul>
+</div>

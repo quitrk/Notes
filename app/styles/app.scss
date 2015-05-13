@@ -1,0 +1,132 @@
+@import 'bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap';
+@import 'gradients.scss';
+@import 'calendar.scss';
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.ember-view {
+  height: 100%;
+}
+
+body {
+  background-color: #333;
+  background-image: url('background.png');
+}
+
+a {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.row {
+  margin: 0;
+}
+
+.navbar input, .sidebar button {
+  min-width: 360px;
+}
+
+.sidebar {
+  padding: 20px;
+  height: 100%;
+}
+
+.btn-primary, .btn-primary:focus {
+  background-color: #4d7bae;
+  border-color: #4d7bae;
+}
+
+.btn-primary:hover {
+  background-color: #21538B;
+  border-color: #4d7bae;
+}
+
+note {
+  border: 2px solid transparent;
+  opacity: 0.8;
+  height: 200px !important;
+  overflow-y: auto;
+  margin: 15px;
+  padding: 15px;
+  word-wrap: break-word;
+}
+
+note h3 {
+   margin: 0;
+}
+
+note .fa {
+  font-size: 20px;
+}
+
+.colors {
+  padding: 10px;
+  margin: 0;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border: 2px solid lightgray;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.modal-content {
+  background-color: #222;
+  opacity: 0.8;
+  border-color: #444;
+  color: white;
+}
+
+.modal-header, .modal-footer {
+  border: 0;
+}
+
+.modal-content input, .modal-content textarea {
+  background-color: #222;
+  border-color: #444;
+  color: white;
+}
+
+.modal-label-color {
+  width: 100%;
+  height: 30px;
+}
+
+textarea {
+  max-width: 100%;
+  min-height: 300px;
+}
+
+.btn-clean {
+  background: transparent;
+  border: 0;
+}
+
+.tt-suggestion, {
+  cursor: pointer;
+  padding: 6px 12px;
+  width: 360px;
+  color: #888;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+
+  span {
+    font-size: 16px;
+  }
+}
+
+.tt-cursor {
+  background-color: #4d7bae;
+  color: white;
+  font-weight: bold;
+}

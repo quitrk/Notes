@@ -5,7 +5,14 @@ module.exports = function(environment) {
     modulePrefix: 'notes',
     environment: environment,
     baseURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
+
+    contentSecurityPolicy: {
+      'style-src': "'self' 'unsafe-inline' data: fonts.googleapis.com",
+      'font-src': "'self' data: fonts.googleapis.com fonts.gstatic.com",
+      'img-src': "'self' www.transparenttextures.com"
+    },
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

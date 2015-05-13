@@ -1,0 +1,55 @@
+calendar {
+  color: white;
+
+  .calendar-header {
+    background: transparent;
+    padding: 10px;
+    text-align: center;
+
+    h3, h4 {
+      margin-top: 0;
+      font-weight: 300;
+    }
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  table {
+    border-collapse: separate;
+    background: transparent;   
+    border-spacing: 10px;
+
+    th, td {
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    td {
+      text-align: center;
+      width: 40px;
+      height: 40px;
+
+      &.active {
+        background-color: white;
+        border: 1px solid lightgray; 
+        border-radius: 100%;
+        color: #333;
+      }
+
+      &.highlight {
+        border: 1px solid rgb(77, 123, 174);
+        border-radius: 100%;
+      }
+
+      &.today {
+        background-color: green;
+        border: 1px solid green;
+        border-radius: 100%;
+        color: white;
+        font-weight: 800;
+      }
+    }
+  }
+}
