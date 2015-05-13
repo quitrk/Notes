@@ -3,9 +3,10 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  needs: ['notes'],
+  needs: ['notes', 'categories'],
 
   notes: Ember.computed.alias('controllers.notes'),
+  categories: Ember.computed.alias('controllers.categories.allCategories'),
 
   init: function () {
     this._super();
@@ -13,6 +14,7 @@ export default Ember.Controller.extend({
   },
 
   setDefaults: function () {
+    this.set('selectedCategory', null);
     this.set('title', '');
     this.set('text', '');
     this.set('selectedColor', 'gray');
@@ -29,6 +31,7 @@ export default Ember.Controller.extend({
       this.set('text', this.get('model.text'));
       this.set('date', this.get('model.date'));
       this.set('selectedColor', this.get('model.color'));
+      this.set('selectedCategory', this.get('model.category'));
     } else {
       this.setDefaults();
     }
@@ -42,6 +45,7 @@ export default Ember.Controller.extend({
           text: this.get('text'),
           date: this.get('date'),
           color: this.get('selectedColor'),
+          category: this.get('selectedCategory')
         });
 
         note.save();
@@ -50,6 +54,7 @@ export default Ember.Controller.extend({
         this.model.set('text', this.get('text'));
         this.model.set('date', this.get('date'));
         this.model.set('color', this.get('selectedColor'));
+        this.model.set('category', this.get('selectedCategory'));
 
         this.model.save();
       }

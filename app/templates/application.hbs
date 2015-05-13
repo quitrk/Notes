@@ -1,7 +1,16 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" role="navigation">
   <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Notes</a>
+      <ul class="nav navbar-nav">
+        {{#link-to "notes" tagName="li" }}
+          <a>Notes</a>
+        {{/link-to}}
+
+        {{#link-to "categories" tagName="li"}}
+          <a>Categories</a>
+        {{/link-to}}
+      </ul>
     </div>
 
     <div class="nav navbar-nav navbar-right">
@@ -11,6 +20,11 @@
     </div>
   </div>
 </nav>
+
+<aside class="sidebar tools pull-right">
+  <span class="fa fa-plus-circle" title="Add note" {{action "showModal" "edit"}}></span>
+  <span class="fa fa-qrcode" title="Add category"></span>
+</aside>
 
 {{outlet}}
 {{outlet 'modal'}}

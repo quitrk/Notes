@@ -1,16 +1,12 @@
- <note {{bind-attr class=":col-lg-2 :col-md-3 :col-xs-6 note.color note.highlight:highlight"}}>
-  <div class="row">
-    <h3 class="pull-left">{{note.title}}</h3>
+<note>
+  <div {{bind-attr class=":col-lg-2 :col-md-3 :col-xs-6 :note-container note.color note.highlight:highlight"}}>
+    <h3>{{note.title}}</h3>
 
-    {{#if view.showButtons}}
-      <div class="pull-right">
-        <button type="button" class="btn-clean fa fa-edit" {{action "edit" note}}></button>
-        <button type="button" class="btn-clean fa fa-remove" {{action "remove" note}}></button>
-      </div>
-    {{/if}}
+    <p>{{note.text}}</p>
   </div>
 
-  <div class="row">
-    {{note.text}}
+  <div {{bind-attr class=":note-tools view.showButtons:show"}}>
+    <button type="button" class="btn-clean fa fa-edit" {{action "edit" note}}></button>
+    <button type="button" class="btn-clean fa fa-remove" {{action "remove" note}}></button>
   </div>
 </note>

@@ -11,12 +11,8 @@ export default Ember.Controller.extend({
   
   actions: {
     jumpToNote: function (note) {
-      note.set('highlight', true);    
+      this.transitionToRoute('notes');
       this.set('notes.selectedDate', new Date(note.get('date')));
-      
-      Ember.run.later(function () {
-        note.set('highlight', false);
-      }, 3000);
     }
   }
 });

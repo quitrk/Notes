@@ -7,6 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route("notes", { path: "/" });
+  this.route("categories");
 });
 
 export default Router;

@@ -1,0 +1,17 @@
+<div id="categories">
+  {{#each category in categories}}
+    <div class="category col-xs-12">
+      <h4 >{{category.label}}</h4>
+
+      <hr />
+
+      <ul>
+        {{#each note in category.notes}}
+          <li>
+            {{view 'note'}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/each}}
+</div>

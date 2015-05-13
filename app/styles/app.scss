@@ -18,53 +18,97 @@ body {
   background-image: url('background.png');
 }
 
-a {
+a, .fa {
   cursor: pointer;
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
-.row {
-  margin: 0;
+.container-fluid {
+  padding-left: 0;
 }
 
-.navbar input, .sidebar button {
-  min-width: 360px;
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+
+  input {
+    min-width: 360px;
+    margin-right: 60px;
+    border: 0;
+    background-color: #222;
+    border-bottom: 1px solid #666;
+    border-left: 1px solid #666;
+    color: white;
+  }
 }
 
 .sidebar {
-  padding: 20px;
-  height: 100%;
-}
+  padding: 21px;
 
-.btn-primary, .btn-primary:focus {
-  background-color: #4d7bae;
-  border-color: #4d7bae;
-}
+  &.tools {    
+    color: white;
+    height: 100%;
+    font-size: 30px;
+    background-color: #222;
 
-.btn-primary:hover {
-  background-color: #21538B;
-  border-color: #4d7bae;
+    .fa {
+      margin-top: 10px;
+      display: block;
+
+      &:hover {
+        color: #bbb;
+      }
+    }
+  }
 }
 
 note {
-  border: 2px solid transparent;
-  opacity: 0.8;
-  height: 200px !important;
-  overflow-y: auto;
-  margin: 15px;
-  padding: 15px;
-  word-wrap: break-word;
-}
+  position: relative;
 
-note h3 {
-   margin: 0;
-}
+  .note-container {
+    opacity: 0.8;
+    height: 200px !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 15px;
+    padding: 15px;
+    word-wrap: break-word;
 
-note .fa {
-  font-size: 20px;
+    h3 {
+       margin: 0;
+    }
+
+    .fa {
+      font-size: 20px;
+    }
+  }  
+
+  .note-tools {
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    right: -10px;
+    background-color: #222;
+    color: white;
+    padding-bottom: 10px;
+
+    .fa {
+      font-size: 16px;
+      margin-top: 10px;
+      display: block;
+    }
+
+    &.show {
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+  }
 }
 
 .colors {
@@ -91,7 +135,7 @@ note .fa {
   border: 0;
 }
 
-.modal-content input, .modal-content textarea {
+.modal-content .form-control {
   background-color: #222;
   border-color: #444;
   color: white;
@@ -116,8 +160,9 @@ textarea {
   cursor: pointer;
   padding: 6px 12px;
   width: 360px;
-  color: #888;
-  background-color: white;
+  color: white;
+  background-color: #222;
+  opacity: 0.8;
   border-bottom: 1px solid #ccc;
 
   span {
@@ -129,4 +174,27 @@ textarea {
   background-color: #4d7bae;
   color: white;
   font-weight: bold;
+}
+
+#categories {
+  overflow: hidden;
+
+  h4 {
+    color: white;
+    margin-left: 15px;
+  }
+
+  hr {
+    border-color: #444;
+    margin: 0 15px;
+  }
+
+  .category { 
+    padding: 0;
+    width: 100%;
+  }
+}
+
+#notes {
+  overflow: hidden;
 }

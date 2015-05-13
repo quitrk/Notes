@@ -1,3 +1,5 @@
+/* global moment */
+
 import Em from 'ember';
 
 var substringMatcher = function (data, keys, displayKey) {

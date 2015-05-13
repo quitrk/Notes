@@ -28,15 +28,5 @@ export default Ember.ArrayController.extend({
 
   highlightedDates: function () {
     return this.get('allNotes').mapBy('date').uniq();
-  }.property('allNotes.@each'),
-
-  actions: {
-    remove: function (note) {
-      note.destroyRecord();
-    },
-
-    edit: function (note) {
-      this.send('showModal', 'edit', note);
-    }
-  }
+  }.property('allNotes.@each')
 });
