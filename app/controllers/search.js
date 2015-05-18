@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
 
   allNotes: Ember.computed.alias('controllers.notes.allNotes'),
 
-  filterKeys:  ['title', 'text', 'date'],
+  filterKeys:  ['title', 'text', 'date', 'category'],
   
   actions: {
     jumpToNote: function (note) {
