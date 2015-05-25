@@ -24,6 +24,10 @@
 <aside class="sidebar tools pull-right">
   <span class="fa fa-plus-circle" title="Add note" {{action "showModal" "edit"}}></span>
   <span class="fa fa-qrcode" title="Add category" {{action "showModal" "add-category"}}></span>
+
+  {{#if canUndo}}
+    <span class="fa fa-undo" title="Undo delete" {{action "undo"}}></span>
+  {{/if}}
 </aside>
 
 {{outlet}}

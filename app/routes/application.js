@@ -15,11 +15,20 @@ export default Ember.Route.extend({
 
   actions: {
     remove: function (note) {
-      note.destroyRecord();
+      note.deleteRecord();
+      this.controllerFor('application').get('deletedNotes').pushObject(note);
     },
 
     edit: function (note) {
       this.send('showModal', 'edit', note);
+    },
+
+    undo: function () {
+      var deletedNotes = this.controllerFor('application').get('deletedNotes'); 
+      var targetNote = deletedNotes.get('lastObject');
+
+      targetNote.rollback();
+      deletedNotes.removeObject(targetNote);
     },
     
     showModal: function(name, model) {
