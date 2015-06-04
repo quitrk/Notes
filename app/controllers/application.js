@@ -1,3 +1,5 @@
+/* global $ */
+
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
@@ -18,4 +20,4 @@ export default Ember.Controller.extend({
   canUndo: function () {
     return this.get('deletedNotes.length');
   }.property('deletedNotes', 'deletedNotes.@each')
-})
+});

@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   actions: {
-    saveCategory: function (value) {
+    saveCategory: function () {
       var label = this.get('category');
 
       if (!label) {
@@ -21,4 +21,4 @@ export default Ember.Controller.extend({
       this.send('removeModal');
     },
   }
-})
+});
