@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
 
   allNotes: Ember.computed.alias('controllers.notes.allNotes'),
 
-  defaultCategories: [null, 'Important', 'Meeting', 'Birthday'],
+  defaultCategories: ['Important', 'Meeting', 'Birthday'],
 
   allCategories: function () {
     var categories = this.get('model').mapBy('label');
@@ -29,6 +29,12 @@ export default Ember.Controller.extend({
         isDefaultCategory: defaultCategories.contains(category)
       });
     });
+
+    categories.pushObject(Ember.Object.create({
+      label: 'No category',
+      notes: notes.filterBy('category', null),
+      isDefaultCategory: true
+    }));
 
     return categories;
   }.property('allCategories', 'allNotes.@each', 'allNotes.@each.category'),

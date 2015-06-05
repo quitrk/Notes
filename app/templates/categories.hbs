@@ -1,7 +1,7 @@
 <div id="categories">
   {{#each category in categories}}
     <div class="category col-xs-12">
-      <h4>
+      <h4 {{bind-attr class="category.notes.length::grayed"}}>
         {{category.label}}
         {{#unless category.isDefaultCategory}}
           <span class="pull-right fa fa-remove remove-category" {{action 'removeCategory' category.label}} title="Remove category"></span>

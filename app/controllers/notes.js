@@ -22,11 +22,11 @@ export default Ember.ArrayController.extend({
     }
 
     return filteredNotes;
-  }.property('selectedDate', 'allNotes.@each'),
+  }.property('selectedDate', 'allNotes.@each.date'),
 
   selectedDate: new Date(),
 
   highlightedDates: function () {
     return this.get('allNotes').mapBy('date').uniq();
-  }.property('allNotes.@each')
+  }.property('selectedDate', 'allNotes.@each.date')
 });

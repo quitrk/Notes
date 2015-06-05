@@ -4,11 +4,11 @@
     <div class="navbar-header">
       <ul class="nav navbar-nav">
         {{#link-to "notes" tagName="li" }}
-          <a>Notes</a>
+          <a>NOTES</a>
         {{/link-to}}
 
         {{#link-to "categories" tagName="li"}}
-          <a>Categories</a>
+          <a>CATEGORIES</a>
         {{/link-to}}
       </ul>
     </div>
@@ -21,7 +21,7 @@
   </div>
 </nav>
 
-<aside class="sidebar tools pull-right">
+<aside class="sidebar tools pull-left">
   <span class="fa fa-plus-circle" title="Add note" {{action "showModal" "edit"}}></span>
   <span class="fa fa-qrcode" title="Add category" {{action "showModal" "add-category"}}></span>
 
