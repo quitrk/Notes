@@ -19,6 +19,6 @@ export default Ember.Controller.extend({
     cancel: function () {
       this.set('category');
       this.send('removeModal');
-    },
+    }
   }
 });
